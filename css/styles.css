@@ -175,12 +175,12 @@ ul {
 
 /* Hero */
 .hero {
-   background-color: #2F303A;
+/* background-color: #2F303A; */
 }
 
 .hero.section {
     text-align: center;
-    padding-bottom: 200px;
+    padding-bottom: 202px;
 }
 
 .hero-title {
@@ -197,11 +197,31 @@ ul {
     margin: 0 auto;
    }
 
+   /* Overlay */
+.overlay {
+    background-color:  #C4C4C4;
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url('../images/new_photo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 94px;
+}
+
 /* Section */
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
+/* Icon feature-list */
 
 .feature-list {
     display: flex;
@@ -212,8 +232,34 @@ ul {
     width: 270px;
 }
 
+.feature-list .item::before {
+    content: '';
+    display: block;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    height: 120px;
+    padding-top: 94px;   
+}
+
 .feature-list .item + .item {
     margin-left: 30px;
+}
+
+.feature-list .feature-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--title-text-color);
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+    padding-top: 30px;
+}
+
+.feature-list .feature-text {
+    color: var(--primary-text-color);
+    font-size: 14px;
+    line-height: 1.71;
 }
 /* Наша команда */
 .work-team {
@@ -225,6 +271,7 @@ ul {
 .work-team .card {
     display: block;
 }
+
 
 .description-foto {
     display: block;
@@ -250,22 +297,6 @@ ul {
 
     text-align: center;
     margin-bottom: 50px;
-}
-
-.feature-list .feature-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    color: var(--title-text-color);
-    text-transform: uppercase;
-
-    margin-bottom: 10px;
-}
-
-.feature-list .feature-text {
-    color: var(--primary-text-color);
-    font-size: 14px;
-    line-height: 1.71;
 }
 
 .section.foto {
@@ -348,10 +379,6 @@ ul {
     font-size: 16px;
     line-height: 1.88;
     color: var(--primary-text-color);
-}
-
-.work-list .link {
-    text-decoration: none;
 }
 
 /* Стилизация кнопок портфолио */
