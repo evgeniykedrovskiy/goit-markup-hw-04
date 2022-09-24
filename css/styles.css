@@ -38,12 +38,6 @@ p {
     margin: 0;
 }
 
-/* img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-} */
-
 /* Переменные */
 :root {
     --primary-text-color: #757575;
@@ -97,7 +91,7 @@ ul {
     align-items: center;
 }
 
-li .header-link {
+.header-list .header-link {
     display: inline-block; 
     color: var(--primary-text-color);
     font-weight: 500;
@@ -105,6 +99,7 @@ li .header-link {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    fill: var(--primary-text-color);
 }
 
  .header-link.emale {
@@ -114,25 +109,19 @@ li .header-link {
 .header-envelope {
     width: 16px;
     height: 12px;
-    margin-right: 10px;
-    fill: var(--primary-text-color);   
+    margin-right: 10px;  
 }
 
 .header-smartphone {
     width: 10px;
     height: 16px; 
     margin-right: 10px;
-    fill: var(--primary-text-color);
-}
-
-.header-smartphone:hover,
-.header-envelope:hover {
-    fill: var(--accent-color);
 }
 
 .header-list .header-link:hover,
 .header-list .header-link:focus {
-    color: var(--accent-color);   
+    fill: var(--accent-color);
+    color: var(--accent-color);
 }
 
 /* Logo */
@@ -145,7 +134,8 @@ li .header-link {
     text-decoration: none;
 }
 
-.logo:hover {
+.logo:hover, 
+.logo:focus {
     color: var(--accent-color);
 }
 
@@ -352,7 +342,8 @@ li .header-link {
    width: 44px;
    height: 44px;
    border-radius: 50%;
-   background-color: #FFFFFF;
+   background-color: var(--primary-white-color);
+   fill: #AFB1B8;
 }
 
 .social-link.linkedin {
@@ -361,14 +352,13 @@ li .header-link {
 
 .link-icon {
     width: 20px;
-    height: 20px;
-    fill: #AFB1B8;
+    height: 20px; 
 }
 
 .social-link:hover, 
-.link-icon:hover {
+.social-link:focus {
     background-color: #2196F3;
-    fill: #FFFFFF;
+    fill: var(--primary-white-color);
 }
 
 /* Флекс Чем занимаемя */
@@ -388,21 +378,24 @@ li .header-link {
     justify-content: space-between;
 }
 
- /* .clients-list li {
-    width: 170px;
-    height: 92px;
-}  */
-
-.clients-icon {
+.clients-link {
+    display: block;
     fill: #AFB1B8;
-    padding: 16px 32px;
-    width: 170px;
-    height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    padding: 0;
+    margin: 0;
 }
 
-.clients-icon:hover {
+.clients-icon {
+    display: block;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;    
+}
+
+.clients-link:hover,
+.clients-link:focus {
     border: 1px solid var(--accent-color);
     fill: var(--accent-color);
 }
@@ -600,8 +593,7 @@ li .header-link {
 
  .footer-list .link {
     text-decoration: none;
-
-font-family: 'Roboto';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -619,10 +611,6 @@ font-family: 'Roboto';
     color: var(--accent-color);
 }
 
-.accent-studio:hover,
-.accent-studio:focus {
-    color: var(--accent-color);
-}
 /* Social-links */
 .footersocial-links {
     display: flex;
@@ -653,9 +641,19 @@ font-family: 'Roboto';
     fill: var(--primary-white-color);
 }
 
-.footer-link:hover {
-    background-color: #2196F3;   
+.footer-link:hover,
+.footer-link:focus {
+    background-color: #2196F3;
+    fill: var(--primary-white-color);
 }
+
+.logo.accent-studio:hover,
+.logo.accent-studio:focus {
+    color: var(--accent-color);
+}
+
+
+
 
 
 
