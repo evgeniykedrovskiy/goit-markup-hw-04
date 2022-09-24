@@ -91,12 +91,14 @@ ul {
 
 .header-list {
     display: flex;
-     margin-left: auto; 
-     padding-left: 0;
+    margin-left: auto; 
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
 }
 
-.header-list .link {
-    display: block; 
+li .header-link {
+    display: inline-block; 
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -105,7 +107,7 @@ ul {
     text-decoration: none;
 }
 
- .link.emale {
+ .header-link.emale {
     margin-right: 30px;
 }
 
@@ -128,8 +130,8 @@ ul {
     fill: var(--accent-color);
 }
 
-.header-list .link:hover,
-.header-list .link:focus {
+.header-list .header-link:hover,
+.header-list .header-link:focus {
     color: var(--accent-color);   
 }
 
@@ -538,7 +540,7 @@ ul {
 }
 
 .filter:hover, 
-.filter:focus {
+.filter:focus { 
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     box-shadow: 0px 1px 1px 
