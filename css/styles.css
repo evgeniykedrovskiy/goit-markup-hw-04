@@ -93,8 +93,7 @@ ul {
 
 .header-list .header-link {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-self: center;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
