@@ -92,7 +92,9 @@ ul {
 }
 
 .header-list .header-link {
-    display: inline-block; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -109,13 +111,13 @@ ul {
 .header-envelope {
     width: 16px;
     height: 12px;
-    margin-right: 5px;  
+    margin-right: 10px;  
 }
 
 .header-smartphone {
     width: 10px;
     height: 16px; 
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .header-list .header-link:hover,
